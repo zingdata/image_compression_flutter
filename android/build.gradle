@@ -2,7 +2,7 @@ group 'id.co.eyro.image_compression_flutter'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '2.0.0'
+    ext.kotlin_version = '2.0.21'
     repositories {
         google()
         mavenCentral()
@@ -26,7 +26,7 @@ apply plugin: 'kotlin-android'
 
 android {
     namespace = 'id.co.eyro.image_compression_flutter'
-    compileSdkVersion 34
+    compileSdkVersion 35
 
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
@@ -34,7 +34,7 @@ android {
     defaultConfig {
         multiDexEnabled true
         minSdkVersion 23
-        targetSdkVersion 34
+        targetSdkVersion 35
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_17
